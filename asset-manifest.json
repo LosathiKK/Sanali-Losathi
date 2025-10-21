@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/sanali-losathi/static/css/main.30260ef3.css",
-    "main.js": "/sanali-losathi/static/js/main.adcf578e.js",
-    "static/media/logo.png": "/sanali-losathi/static/media/logo.4a1b91ff77828feefde6.png",
-    "index.html": "/sanali-losathi/index.html",
-    "main.30260ef3.css.map": "/sanali-losathi/static/css/main.30260ef3.css.map",
-    "main.adcf578e.js.map": "/sanali-losathi/static/js/main.adcf578e.js.map"
+    "main.css": "/Sanali-Losathi/static/css/main.30260ef3.css",
+    "main.js": "/Sanali-Losathi/static/js/main.ec838695.js",
+    "static/media/logo.png": "/Sanali-Losathi/static/media/logo.4a1b91ff77828feefde6.png",
+    "index.html": "/Sanali-Losathi/index.html",
+    "main.30260ef3.css.map": "/Sanali-Losathi/static/css/main.30260ef3.css.map",
+    "main.ec838695.js.map": "/Sanali-Losathi/static/js/main.ec838695.js.map"
   },
   "entrypoints": [
     "static/css/main.30260ef3.css",
-    "static/js/main.adcf578e.js"
+    "static/js/main.ec838695.js"
   ]
 }
