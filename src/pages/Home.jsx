@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import AyurScanImage from '../assets/images/AyurScan.png';
+import DinlankaImage from '../assets/images/DinlankaLogisticsImage.png';
 import '../styles/global.css';
 
 const Home = () => {
@@ -14,8 +16,8 @@ const Home = () => {
         <div className="hero-content">
           <h1 className="hero-title">
             Hi, I'm Sanali.<br />
-            Branding & Web<br />
-            Designer
+            Web & Mobile App<br />
+            Developer
           </h1>          
           
           <div className="social-section">
@@ -34,73 +36,147 @@ const Home = () => {
       {/* Projects Section */}
       <section id="projects" className="projects-section">
         <div className="projects-container">
+
           {/* Project 1 */}
           <div className="project-item">
             <div className="project-text">
-              <h3 className="project-title">Mobile App UI/UX</h3>
+              <h3 className="project-title">AyurScan</h3>
               <p className="project-description">
-                User interface and experience design for a health and wellness application.
+                Augmented Reality Based Ayurvedic Herbs Idetification Mobile Application.
               </p>
-              <div className="project-year">2022</div>
+              <div className="project-category">Mobile App</div>
+              <div className="project-year">2025</div>
               <a href="#" className="project-link">View Project →</a>
             </div>
             <div className="project-image">
-              <div className="image-placeholder">
-                <span>Project Image</span>
-              </div>
+              <img 
+                src={AyurScanImage} 
+                alt="AyurScan Mobile Application"
+                className="project-image-content"
+              />
             </div>
           </div>
 
           {/* Project 2 */}
           <div className="project-item">
             <div className="project-text">
-              <h3 className="project-title">Brand Identity Design</h3>
+              <h3 className="project-title">Dinlanka Logistics</h3>
               <p className="project-description">
-                Complete brand identity and visual system for a modern tech startup.
+                Website Development - Logistics Company
               </p>
-              <div className="project-year">2023</div>
+              <div className="project-category">Website</div>
+              <div className="project-year">2025</div>
               <a href="#" className="project-link">View Project →</a>
             </div>
             <div className="project-image">
-              <div className="image-placeholder">
-                <span>Project Image</span>
-              </div>
+              <img 
+                src={DinlankaImage} 
+                alt="Dinlanka Logistics Website"
+                className="project-image-content"
+              />
             </div>
           </div>
 
           {/* Project 3 */}
           <div className="project-item">
             <div className="project-text">
-              <h3 className="project-title">E-commerce Website</h3>
+              <h3 className="project-title">BlinqElite</h3>
               <p className="project-description">
-                Responsive web design and user experience for an online fashion retailer.
+                Website Development - Cleaning Service 
               </p>
+              <div className="project-category">Website</div>
+              <div className="project-year">2025</div>
+              <a href="#" className="project-link">View Project →</a>
+            </div>
+            <div className="project-image">
+              <img 
+                src={AyurScanImage} 
+                alt="BlinqElite Website"
+                className="project-image-content"
+              />
+            </div>
+          </div>
+          
+          {/* Project 4 */}
+          <div className="project-item">
+            <div className="project-text">
+              <h3 className="project-title">TaskIt</h3>
+              <p className="project-description">
+                Mobile App UI/UX - ToDo List 
+              </p>
+              <div className="project-category">Mobile App</div>
+              <div className="project-year">2022</div>
+              <a href="#" className="project-link">View Project →</a>
+            </div>
+            <div className="project-image">
+              <img 
+                src={AyurScanImage} 
+                alt="TaskIt Mobile App"
+                className="project-image-content"
+              />
+            </div>
+          </div>
+
+          {/* Project 5 */}
+          <div className="project-item">
+            <div className="project-text">
+              <h3 className="project-title">MusicPlayer</h3>
+              <p className="project-description">
+                Mobile App UI/UX - Music Player
+              </p>
+              <div className="project-category">Mobile App</div>
+              <div className="project-year">2022</div>
+              <a href="#" className="project-link">View Project →</a>
+            </div>
+            <div className="project-image">
+              <img 
+                src={AyurScanImage} 
+                alt="MusicPlayer Mobile App"
+                className="project-image-content"
+              />
+            </div>
+          </div>
+
+          {/* Project 6 */}
+          <div className="project-item">
+            <div className="project-text">
+              <h3 className="project-title">Brand Identity Design</h3>
+              <p className="project-description">
+                Complete brand identity and visual system for a modern tech startup.
+              </p>
+              <div className="project-category">Branding</div>
               <div className="project-year">2023</div>
               <a href="#" className="project-link">View Project →</a>
             </div>
             <div className="project-image">
-              <div className="image-placeholder">
-                <span>Project Image</span>
-              </div>
+              <img 
+                src={AyurScanImage} 
+                alt="Brand Identity Design"
+                className="project-image-content"
+              />
             </div>
           </div>
 
-          {/* Project 4 */}
+          {/* Project 7 */}
           <div className="project-item">
             <div className="project-text">
-              <h3 className="project-title">Logo Design Collection</h3>
+              <h3 className="project-title">E-commerce Website</h3>
               <p className="project-description">
-                A collection of minimalist logo designs for various creative agencies.
+                Responsive web design and user experience for an online fashion retailer.
               </p>
-              <div className="project-year">2024</div>
+              <div className="project-category">E-commerce</div>
+              <div className="project-year">2023</div>
               <a href="#" className="project-link">View Project →</a>
             </div>
             <div className="project-image">
-              <div className="image-placeholder">
-                <span>Project Image</span>
-              </div>
+              <img 
+                src={AyurScanImage} 
+                alt="E-commerce Website"
+                className="project-image-content"
+              />
             </div>
           </div>
+
         </div>
       </section>
       
