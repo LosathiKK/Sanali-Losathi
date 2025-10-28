@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import AyurScanImage from '../assets/images/AyurScan.png';
-import DinlankaImage from '../assets/images/DinlankaLogisticsImage.png';
+import BlinqEliteImage from '../assets/images/BlinqElite.png';
+import DinlankaLogisticsImage from '../assets/images/DinlankaLogistics.png';
+import MusicPlayerImage from '../assets/images/MusicPlayer.png';
 import '../styles/global.css';
 
 const Home = () => {
@@ -70,7 +72,7 @@ const Home = () => {
             </div>
             <div className="project-image">
               <img 
-                src={DinlankaImage} 
+                src={DinlankaLogisticsImage} 
                 alt="Dinlanka Logistics Website"
                 className="project-image-content"
               />
@@ -90,7 +92,7 @@ const Home = () => {
             </div>
             <div className="project-image">
               <img 
-                src={AyurScanImage} 
+                src={BlinqEliteImage} 
                 alt="BlinqElite Website"
                 className="project-image-content"
               />
@@ -130,7 +132,7 @@ const Home = () => {
             </div>
             <div className="project-image">
               <img 
-                src={AyurScanImage} 
+                src={MusicPlayerImage} 
                 alt="MusicPlayer Mobile App"
                 className="project-image-content"
               />
