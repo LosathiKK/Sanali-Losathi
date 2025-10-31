@@ -6,6 +6,7 @@ import AyurScanImage from '../assets/images/AyurScan.png';
 import BlinqEliteImage from '../assets/images/BlinqElite.png';
 import DinlankaLogisticsImage from '../assets/images/DinlankaLogistics.png';
 import MusicPlayerImage from '../assets/images/MusicPlayer.png';
+import TaskItImage from '../assets/images/TaskIt.png'
 import '../styles/global.css';
 
 const Home = () => {
@@ -112,7 +113,7 @@ const Home = () => {
             </div>
             <div className="project-image">
               <img 
-                src={AyurScanImage} 
+                src={TaskItImage} 
                 alt="TaskIt Mobile App"
                 className="project-image-content"
               />
@@ -152,7 +153,7 @@ const Home = () => {
             </div>
             <div className="project-image">
               <img 
-                src={AyurScanImage} 
+                src={TaskItImage} 
                 alt="Brand Identity Design"
                 className="project-image-content"
               />
