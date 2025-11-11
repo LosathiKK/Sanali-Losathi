@@ -3,6 +3,45 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import SanaliImage from '../assets/images/Sanali.jpg';
 
+import html from "../assets/icons/html.svg";
+import css from "../assets/icons/css.svg";
+import javascript from "../assets/icons/javascript.svg";
+import react from "../assets/icons/react.svg";
+import php from "../assets/icons/php.svg";
+import flutter from "../assets/icons/flutter.svg";
+import dart from "../assets/icons/dart.svg";
+import wordpress from "../assets/icons/wordpress.svg";
+import mysql from "../assets/icons/mysql.svg";
+import git from "../assets/icons/git.svg";
+import github from "../assets/icons/github.svg";
+import firebase from "../assets/icons/firebase.svg";
+import java from "../assets/icons/java.svg";
+import python from "../assets/icons/python.svg";
+import figma from "../assets/icons/figma.svg";
+import nodejs from "../assets/icons/node-js.svg";
+import bootstrap from "../assets/icons/bootstrap.svg";
+
+const skills = [
+  { name: "HTML", icon: html },
+  { name: "CSS", icon: css },
+  { name: "JavaScript", icon: javascript },
+  { name: "React", icon: react },
+  { name: "PHP", icon: php },
+  { name: "Flutter", icon: flutter },
+  { name: "Dart", icon: dart },
+  { name: "WordPress", icon: wordpress },
+  { name: "MySQL", icon: mysql },
+  { name: "Git", icon: git },
+  { name: "GitHub", icon: github },
+  { name: "Firebase", icon: firebase },
+  { name: "Java", icon: java },
+  { name: "Python", icon: python },
+  { name: "Figma", icon: figma },
+  { name: "Node.js", icon: nodejs },
+  { name: "Bootstrap", icon: bootstrap },
+];
+
+
 const Bio = () => {
   return (
     <div className="min-h-screen bg-white">
@@ -71,18 +110,18 @@ const Bio = () => {
         <div className="technical-skills-section">
           <h2 className="technical-skills-title">Technical Skills</h2>
           <div className="technical-skills-grid">
-            <div className="technical-skill-item">HTML/CSS</div>
-            <div className="technical-skill-item">JavaScript</div>
-            <div className="technical-skill-item">React.js</div>
-            <div className="technical-skill-item">PHP</div>
-            <div className="technical-skill-item">Flutter & Dart</div>
-            <div className="technical-skill-item">WordPress</div>
-            <div className="technical-skill-item">MySQL</div>
-            <div className="technical-skill-item">ARCore</div>
-            <div className="technical-skill-item">Git/GitHub</div>
-            <div className="technical-skill-item">Firebase</div>
+            {skills.map((skill, index) => (
+              <div className="technical-skill-item" key={index} title={skill.name}>
+                <img
+                  src={skill.icon}
+                  alt={skill.name}
+                  className="technical-skill-icon"
+                />
+              </div>
+            ))}
           </div>
         </div>
+
         
         {/* Experience Section */}
         <div className="experience-section">
