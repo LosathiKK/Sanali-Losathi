@@ -3,6 +3,27 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 const Contact = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    
+    // Get form values
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+    
+    // Format WhatsApp message
+    const whatsappMessage = `Hello! My name is ${name}.%0A%0AEmail: ${email}%0A%0AMessage: ${message}`;
+    
+    // WhatsApp number: +94 70 234 0149 (format: 94702340149)
+    const whatsappNumber = '94702340149';
+    
+    // Create WhatsApp URL
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+    
+    // Open WhatsApp in new tab
+    window.open(whatsappUrl, '_blank');
+  };
+
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
@@ -99,7 +120,7 @@ const Contact = () => {
           
           {/* Right Section - Contact Form */}
           <div className="contact-form-section">
-            <form className="contact-form">
+            <form className="contact-form" onSubmit={handleSubmit}>
               <div className="form-group">
                 <label htmlFor="name" className="form-label">Name</label>
                 <input
@@ -108,6 +129,7 @@ const Contact = () => {
                   name="name"
                   className="form-input"
                   placeholder="Your name"
+                  required
                 />
               </div>
               
@@ -119,6 +141,7 @@ const Contact = () => {
                   name="email"
                   className="form-input"
                   placeholder="Your email"
+                  required
                 />
               </div>
               
@@ -130,6 +153,7 @@ const Contact = () => {
                   rows="4"
                   className="form-textarea"
                   placeholder="Your message"
+                  required
                 ></textarea>
               </div>
               
